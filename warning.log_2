@@ -1,119 +1,3 @@
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | description | Error loading property goblin:hair_index
-
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | description | Error loading Actor Properties
-
-[Json][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | components | minecraft:despawn | max_distance | child 'max_distance' not valid here.
-
-[Json][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | components | minecraft:despawn | min_distance | child 'min_distance' not valid here.
-
-[Json][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | components | minecraft:interact | interactions | consume_item | child 'consume_item' not valid here.
-
-[Json][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | components | minecraft:behavior.ranged_attack | on_attack | child 'on_attack' not valid here.
-
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | events | goblin:on_hurt | filters | filters | Filter member of test must be a string
-
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | events | goblin:on_hurt | filters | filters | Filter test failed to parse inputs -> has_property
-
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | Filter member of test must be a string
-
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | Filter test failed to parse inputs -> has_property
-
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | none_of | Filter member of test must be a string
-
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | none_of | Filter test failed to parse inputs -> has_property
-
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | events | goblin:on_regress | filters | filters | Filter member of test must be a string
-
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | events | goblin:on_regress | filters | filters | Filter test failed to parse inputs -> has_property
-
-[Json][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | component_groups | goblin:exploding | minecraft:explode | damage_sources | child 'damage_sources' not valid here.
-
-[Json][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/pack(1) | bridge:goblin_girl | minecraft:entity | component_groups | goblin:exploding | minecraft:explode | fuse_duration | child 'fuse_duration' not valid here.
-
-[Localization][warning]-Line: 68 - Invalid lang file format. New line character was found while parsing key: '//items'.
-
-[Localization][warning]-Line: 73 - Invalid lang file format. New line character was found while parsing key: '//spawn eggs//'.
-
-[Localization][warning]-Line: 111 - Invalid lang file format. New line character was found while parsing key: '//entities//'.
-
-[Localization][warning]-Line: 149 - Invalid lang file format. New line character was found while parsing key: '//new furni//'.
-
-[Localization][warning]-Line: 187 - Invalid lang file format. New line character was found while parsing key: '///'.
-
-[Localization][warning]-Line: 231 - Invalid lang file format. New line character was found while parsing key: 'skin.camoflauge skinpack.ironoreiron ore'.
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | apple | child 'apple' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | carrot | child 'carrot' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | drinking | child 'drinking' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | leaning | child 'leaning' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | loading | child 'loading' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | melon | child 'melon' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | pop_fake | child 'pop_fake' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | pop_real | child 'pop_real' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | punching | child 'punching' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | resting | child 'resting' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | shooting | child 'shooting' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | sitting | child 'sitting' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | standing | child 'standing' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | swinging | child 'swinging' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.animation.json | animations | walking | child 'walking' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.states.json | animations | bloated | child 'bloated' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.states.json | animations | packed | child 'packed' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.states.json | animations | relaxed | child 'relaxed' not valid here.
-
-[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animations/goblin.states.json | animations | stuffed | child 'stuffed' not valid here.
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Rendering][error]-render_controllers/goblin_render_controller.json | render_controllers | controller.render.goblin | pre_animation | child 'pre_animation' not valid here.
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Geometry][error]-bridge:goblin_girl | bridge:goblin_girl | Invalid render controller: controller.render.goblin
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[UI][error]-UI Control: screen_world_controls_and_settings | UI Control: variables_button_mappings_and_controls | UI Control: safezone_screen_matrix | UI Control: inner_matrix | UI Control: safezone_screen_panel | UI Control: root_screen_panel | UI Control: search_settings_content_factory | UI Control: search_settings_content | UI Control: content | UI Control: content_stacking | UI Control: settings_options_scrolling_panel | UI Control: scrolling_panel | UI Control: scroll_mouse | UI Control: scroll_view | UI Control: stack_panel | UI Control: background_and_viewport | UI Control: scrolling_view_port | UI Control: scrolling_content | UI Control: video_section | UI Control: option_toggle_improved_input_response | UI Control: option | UI Control Key: improved_input_response_option@general_section.improved_input_response_option | UI control reference not found: 'improved_input_response_option'
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[UI][error]-UI Control: screen_world_controls_and_settings | UI Control: variables_button_mappings_and_controls | UI Control: safezone_screen_matrix | UI Control: inner_matrix | UI Control: safezone_screen_panel | UI Control: root_screen_panel | UI Control: search_settings_content_factory | UI Control: search_settings_content | UI Control: content | UI Control: content_stacking | UI Control: settings_options_scrolling_panel | UI Control: scrolling_panel | UI Control: scroll_mouse | UI Control: scroll_view | UI Control: stack_panel | UI Control: background_and_viewport | UI Control: scrolling_view_port | UI Control: scrolling_content | UI Control: video_section | UI Control: option_toggle_improved_input_response | UI Control: option | On Control Path: /screen_world_controls_and_settings/variables_button_mappings_and_controls/safezone_screen_matrix/inner_matrix/safezone_screen_panel/root_screen_panel/search_settings_content_factory/search_settings_content/content/content_stacking/settings_options_scrolling_panel/scrolling_panel/scroll_mouse/scroll_view/stack_panel/background_and_viewport/scrolling_view_port/scrolling_content/video_section/option_toggle_improved_input_response/option/improved_input_response_option | Type not specified (or @-base not found) for control: improved_input_response_option
-
 [Animation][error]-Error: can't find animation bloated
 
 [Animation][error]-Error: can't find animation packed
@@ -174,27 +58,12 @@
 
 [Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.weapon | states | unarmed | transitions | crossbow | query.property('goblin:weapon_state')==2 | Error: query.property called on an actor without a property component.
 
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
+[Scripting][warning]-[Goblin] setProperty goblin:hair_index failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:hair_index" does not exist on Entity of type "bridge:goblin".
 
 [Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.weapon | states | unarmed | transitions | mace | query.property('goblin:weapon_state')==3 | Error: query.property called on an actor without a property component.
 
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
+[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin".
 
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
+[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin".
 
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | walking | transitions | locked | query.property('goblin:locked') | Error: query.property called on an actor without a property component.
-
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | walking | transitions | attacking_melee | query.property('goblin:attacking')&&query.property('goblin:weapon_state')!=2 | Error: query.property called on an actor without a property component.
-
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/pack(2)/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | walking | transitions | attacking_ranged | query.property('goblin:attacking')&&query.property('goblin:weapon_state')==2 | Error: query.property called on an actor without a property component.
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
-[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin_girl".
-
+[Scripting][warning]-[Goblin] setProperty goblin:full_skin failed: InvalidArgumentError: Invalid value passed to argument [0]. Property "goblin:full_skin" does not exist on Entity of type "bridge:goblin".
