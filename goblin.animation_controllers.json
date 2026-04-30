@@ -1,0 +1,160 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+
+        "controller.animation.goblin.stage": {
+            "initial_state": "relaxed",
+            "states": {
+                "relaxed": {
+                    "animations": [ "relaxed" ],
+                    "transitions": [
+                        { "bloated": "query.property('goblin:stage') == 2" },
+                        { "stuffed": "query.property('goblin:stage') == 3" },
+                        { "packed":  "query.property('goblin:stage') == 4" }
+                    ]
+                },
+                "bloated": {
+                    "animations": [ "bloated" ],
+                    "transitions": [
+                        { "relaxed": "query.property('goblin:stage') == 1" },
+                        { "stuffed": "query.property('goblin:stage') == 3" },
+                        { "packed":  "query.property('goblin:stage') == 4" }
+                    ]
+                },
+                "stuffed": {
+                    "animations": [ "stuffed" ],
+                    "transitions": [
+                        { "relaxed": "query.property('goblin:stage') == 1" },
+                        { "bloated": "query.property('goblin:stage') == 2" },
+                        { "packed":  "query.property('goblin:stage') == 4" }
+                    ]
+                },
+                "packed": {
+                    "animations": [ "packed" ],
+                    "transitions": [
+                        { "relaxed": "query.property('goblin:stage') == 1" },
+                        { "bloated": "query.property('goblin:stage') == 2" },
+                        { "stuffed": "query.property('goblin:stage') == 3" }
+                    ]
+                }
+            }
+        },
+
+        "controller.animation.goblin.motion": {
+            "initial_state": "standing",
+            "states": {
+                "standing": {
+                    "animations": [ "standing" ],
+                    "transitions": [
+                        { "locked":   "query.property('goblin:locked')" },
+                        { "walking":  "query.modified_move_speed > 0.1" },
+                        { "sitting":  "query.property('goblin:idle_pose') == 1" },
+                        { "leaning":  "query.property('goblin:idle_pose') == 2" },
+                        { "resting":  "query.property('goblin:idle_pose') == 3" },
+                        { "attacking_melee":   "query.property('goblin:attacking') && query.property('goblin:weapon_state') != 2" },
+                        { "attacking_ranged":  "query.property('goblin:attacking') && query.property('goblin:weapon_state') == 2" }
+                    ]
+                },
+                "walking": {
+                    "animations": [ "walking" ],
+                    "transitions": [
+                        { "locked":   "query.property('goblin:locked')" },
+                        { "standing": "query.modified_move_speed <= 0.1" },
+                        { "attacking_melee":  "query.property('goblin:attacking') && query.property('goblin:weapon_state') != 2" },
+                        { "attacking_ranged": "query.property('goblin:attacking') && query.property('goblin:weapon_state') == 2" }
+                    ]
+                },
+                "sitting": {
+                    "animations": [ "sitting" ],
+                    "transitions": [
+                        { "locked":   "query.property('goblin:locked')" },
+                        { "standing": "query.property('goblin:idle_pose') == 0" },
+                        { "leaning":  "query.property('goblin:idle_pose') == 2" }
+                    ]
+                },
+                "leaning": {
+                    "animations": [ "leaning" ],
+                    "transitions": [
+                        { "locked":   "query.property('goblin:locked')" },
+                        { "standing": "query.property('goblin:idle_pose') == 0" },
+                        { "sitting":  "query.property('goblin:idle_pose') == 1" }
+                    ]
+                },
+                "resting": {
+                    "animations": [ "resting" ],
+                    "transitions": [
+                        { "locked":   "query.property('goblin:locked')" },
+                        { "standing": "query.property('goblin:idle_pose') == 0" }
+                    ]
+                },
+                "attacking_melee": {
+                    "animations": [
+                        { "punching": "query.property('goblin:weapon_state') == 0 || query.property('goblin:weapon_state') == 3" },
+                        { "swinging": "query.property('goblin:weapon_state') == 1" }
+                    ],
+                    "transitions": [
+                        { "locked":   "query.property('goblin:locked')" },
+                        { "standing": "!query.property('goblin:attacking')" }
+                    ]
+                },
+                "attacking_ranged": {
+                    "animations": [
+                        { "loading":  "query.property('goblin:crossbow_phase') == 1" },
+                        { "shooting": "query.property('goblin:crossbow_phase') == 2" }
+                    ],
+                    "transitions": [
+                        { "locked":   "query.property('goblin:locked')" },
+                        { "standing": "query.property('goblin:crossbow_phase') == 0 && !query.property('goblin:attacking')" }
+                    ]
+                },
+                "locked": {
+                    "animations": [
+                        { "drinking":  "query.property('goblin:lock_anim') == 0" },
+                        { "apple":     "query.property('goblin:lock_anim') == 1" },
+                        { "carrot":    "query.property('goblin:lock_anim') == 2" },
+                        { "melon":     "query.property('goblin:lock_anim') == 3" },
+                        { "pop_real":  "query.property('goblin:lock_anim') == 4" },
+                        { "pop_fake":  "query.property('goblin:lock_anim') == 5" }
+                    ],
+                    "transitions": [
+                        { "standing": "!query.property('goblin:locked')" }
+                    ]
+                }
+            }
+        },
+
+        "controller.animation.goblin.weapon": {
+            "initial_state": "unarmed",
+            "states": {
+                "unarmed": {
+                    "transitions": [
+                        { "sword": "query.property('goblin:weapon_state') == 1" },
+                        { "crossbow": "query.property('goblin:weapon_state') == 2" },
+                        { "mace": "query.property('goblin:weapon_state') == 3" }
+                    ]
+                },
+                "sword": {
+                    "transitions": [
+                        { "unarmed":  "query.property('goblin:weapon_state') == 0" },
+                        { "crossbow": "query.property('goblin:weapon_state') == 2" },
+                        { "mace":     "query.property('goblin:weapon_state') == 3" }
+                    ]
+                },
+                "crossbow": {
+                    "transitions": [
+                        { "unarmed": "query.property('goblin:weapon_state') == 0" },
+                        { "sword":   "query.property('goblin:weapon_state') == 1" },
+                        { "mace":    "query.property('goblin:weapon_state') == 3" }
+                    ]
+                },
+                "mace": {
+                    "transitions": [
+                        { "unarmed":  "query.property('goblin:weapon_state') == 0" },
+                        { "sword":    "query.property('goblin:weapon_state') == 1" },
+                        { "crossbow": "query.property('goblin:weapon_state') == 2" }
+                    ]
+                }
+            }
+        }
+    }
+}
