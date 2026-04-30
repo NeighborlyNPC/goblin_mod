@@ -1,0 +1,134 @@
+{
+  "goblin_pops": {
+    "subtitle": "subtitles.goblin_pops",
+    "sounds": [
+      {
+        "name": "expandable_goblins:pop",
+        "stream": false
+      }
+    ]
+  },
+  "berry_pops": {
+    "subtitle": "subtitles.berry_pops",
+    "sounds": [
+      {
+        "name": "expandable_goblins:pop_berry",
+        "stream": false
+      }
+    ]
+  },
+  "burp": {
+    "subtitle": "subtitles.burp",
+    "sounds": [
+      {
+        "name": "expandable_goblins:burp2",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:burp3",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:burp4",
+        "stream": false
+      }
+    ]
+  },
+  "goblin_drink": {
+    "subtitle": "subtitles.goblin_drink",
+    "sounds": [
+      {
+        "name": "expandable_goblins:drink3",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:drink2",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:drink1",
+        "stream": false
+      }
+    ]
+  },
+  "berry_squeaks": {
+    "subtitle": "subtitles.berry_squeaks",
+    "sounds": [
+      {
+        "name": "expandable_goblins:berry_squeak4",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:berry_squeak3",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:berry_squeak2",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:berry_squeak1",
+        "stream": false
+      }
+    ]
+  },
+  "berry_pain": {
+    "subtitle": "subtitles.berry_pain",
+    "sounds": [
+      {
+        "name": "expandable_goblins:berry_pain2",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:berry_pain1",
+        "stream": false
+      }
+    ]
+  },
+  "goblin_is_hurt": {
+    "subtitle": "subtitles.goblin_is_hurt",
+    "sounds": [
+      {
+        "name": "expandable_goblins:goblin_grunt3",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:goblin_hurt3",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:goblin_hurt2",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:goblin_hurt1",
+        "stream": false
+      }
+    ]
+  },
+  "tummy_rumble": {
+    "subtitle": "subtitles.tummy_rumble",
+    "sounds": [
+      {
+        "name": "expandable_goblins:bloat1",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:bloat2",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:bloat3",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:bloat5",
+        "stream": false
+      },
+      {
+        "name": "expandable_goblins:bloat6",
+        "stream": false
+      }
+    ]
+  }
+}
