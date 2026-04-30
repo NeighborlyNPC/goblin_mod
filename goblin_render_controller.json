@@ -1,0 +1,74 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.goblin": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				},
+				{
+					"hair": "material.hair"
+				}
+			],
+			"textures": [
+				"variable.full_skin >= 0 ? texture.poppy : texture.skin_layer",
+				"variable.full_skin >= 0 ? texture.poppy : texture.clothes_layer",
+				"variable.full_skin >= 0 ? texture.poppy : texture.hair_layer"
+			],
+			"pre_animation": [
+				"variable.full_skin = query.property('goblin:full_skin');",
+				"variable.skin_index = query.variant;",
+				"variable.clothes_index = query.skin_id;",
+				"variable.hair_index = query.property('goblin:hair_index');",
+				"variable.skin_layer = array.skins[variable.skin_index];",
+				"variable.clothes_layer = array.clothes[variable.clothes_index];",
+				"variable.hair_layer = array.hairs[variable.hair_index];"
+			],
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.skin0",
+						"texture.skin1",
+						"texture.skin2",
+						"texture.skin3",
+						"texture.skin4",
+						"texture.skin5",
+						"texture.skin6",
+						"texture.skin7",
+						"texture.skin8",
+						"texture.skin9"
+					],
+					"array.clothes": [
+						"cloths0.png",
+						"texture.cloths1",
+						"texture.cloths2",
+						"texture.cloths3",
+						"texture.cloths4",
+						"texture.cloths5",
+						"texture.cloths6",
+						"texture.cloths7"
+					],
+					"array.hairs": [
+						"texture.hair0",
+						"texture.hair1",
+						"texture.hair2",
+						"texture.hair3",
+						"texture.hair4",
+						"texture.hair5",
+						"texture.hair6",
+						"texture.hair7",
+						"texture.hair8",
+						"texture.hair9",
+						"texture.hair10",
+						"texture.hair11",
+						"texture.hair12",
+						"texture.hair13",
+						"texture.hair14",
+						"texture.hair15"
+					]
+				}
+			}
+		}
+	}
+}
