@@ -9,19 +9,13 @@
 			"properties": {
 				"goblin:stage": {
 					"type": "int",
-					"range": [
-						1,
-						4
-					],
+					"range": [ 1, 4 ],
 					"default": 1,
 					"client_sync": true
 				},
 				"goblin:idle_pose": {
 					"type": "int",
-					"range": [
-						0,
-						3
-					],
+					"range": [ 0, 3 ],
 					"default": 0,
 					"client_sync": true
 				},
@@ -32,10 +26,7 @@
 				},
 				"goblin:lock_anim": {
 					"type": "int",
-					"range": [
-						0,
-						5
-					],
+					"range": [ 0, 5 ],
 					"default": 0,
 					"client_sync": true
 				},
@@ -46,147 +37,89 @@
 				},
 				"goblin:weapon_state": {
 					"type": "int",
-					"range": [
-						0,
-						3
-					],
+					"range": [ 0, 3 ],
 					"default": 0,
 					"client_sync": true
 				},
 				"goblin:crossbow_phase": {
 					"type": "int",
-					"range": [
-						0,
-						2
-					],
+					"range": [ 0, 2 ],
 					"default": 0,
 					"client_sync": true
 				},
 				"goblin:hair_index": {
 					"type": "int",
-					"range": [
-						0,
-						15
-					],
+					"range": [ 0, 15 ],
 					"default": 0,
 					"client_sync": true
 				},
 				"goblin:full_skin": {
 					"type": "int",
-					"range": [
-						0,
-						11
-					],
-					"default": 0,
+					"range": [ -1, 10 ],
+					"default": -1,
 					"client_sync": true
 				},
 				"goblin:digestion_timer": {
 					"type": "float",
-					"range": [
-						0,
-						25
-					],
-					"default": 20,
+					"range": [ 0.0, 25.0 ],
+					"default": 20.0,
 					"client_sync": false
 				}
 			}
 		},
 		"component_groups": {
 			"goblin:type_normal": {
-				"minecraft:mark_variant": {
-					"value": 0
-				}
+				"minecraft:mark_variant": { "value": 0 }
 			},
 			"goblin:type_ranged": {
-				"minecraft:mark_variant": {
-					"value": 1
-				},
+				"minecraft:mark_variant": { "value": 1 },
 				"minecraft:equipment": {
 					"table": "loot_tables/entities/goblin_crossbow.json",
 					"slot_drop_chance": [
-						{
-							"slot": "slot.weapon.mainhand",
-							"drop_chance": 0.085
-						}
+						{ "slot": "slot.weapon.mainhand", "drop_chance": 0.085 }
 					]
 				}
 			},
 			"goblin:type_mace": {
-				"minecraft:mark_variant": {
-					"value": 2
-				},
+				"minecraft:mark_variant": { "value": 2 },
 				"minecraft:equipment": {
 					"table": "loot_tables/entities/goblin_mace.json",
 					"slot_drop_chance": [
-						{
-							"slot": "slot.weapon.mainhand",
-							"drop_chance": 0.085
-						}
+						{ "slot": "slot.weapon.mainhand", "drop_chance": 0.085 }
 					]
 				}
 			},
 			"goblin:stage_1": {
-				"minecraft:movement": {
-					"value": 0.3
-				},
-				"minecraft:health": {
-					"value": 20,
-					"max": 20
-				}
+				"minecraft:movement": { "value": 0.3 },
+				"minecraft:health": { "value": 20, "max": 20 }
 			},
 			"goblin:stage_2": {
-				"minecraft:movement": {
-					"value": 0.27
-				},
-				"minecraft:health": {
-					"value": 24,
-					"max": 24
-				}
+				"minecraft:movement": { "value": 0.27 },
+				"minecraft:health": { "value": 24, "max": 24 }
 			},
 			"goblin:stage_3": {
-				"minecraft:movement": {
-					"value": 0.24
-				},
-				"minecraft:health": {
-					"value": 28,
-					"max": 28
-				}
+				"minecraft:movement": { "value": 0.24 },
+				"minecraft:health": { "value": 28, "max": 28 }
 			},
 			"goblin:stage_4": {
-				"minecraft:movement": {
-					"value": 0.21
-				},
-				"minecraft:health": {
-					"value": 32,
-					"max": 32
-				}
+				"minecraft:movement": { "value": 0.21 },
+				"minecraft:health": { "value": 32, "max": 32 }
 			},
 			"goblin:tamed": {
 				"minecraft:is_tamed": {},
 				"minecraft:tameable": {
 					"probability": 0,
 					"tame_items": [],
-					"tame_event": {
-						"event": "goblin:on_tamed"
-					}
+					"tame_event": { "event": "goblin:on_tamed" }
 				},
-				"minecraft:owner_identifier": {},
 				"minecraft:behavior.follow_owner": {
 					"priority": 4,
 					"speed_multiplier": 1,
 					"start_distance": 10,
 					"stop_distance": 2
 				},
-				"minecraft:behavior.owner_hurt_by_target": {
-					"priority": 1
-				},
-				"minecraft:behavior.owner_hurt_target": {
-					"priority": 2
-				},
-				"minecraft:behavior.stay": {
-					"priority": 3,
-					"speed_multiplier": 0
-				},
+				"minecraft:behavior.owner_hurt_by_target": { "priority": 1 },
+				"minecraft:behavior.owner_hurt_target": { "priority": 2 },
 				"minecraft:angry": {
 					"duration": 0,
 					"broadcast_anger": false
@@ -202,37 +135,13 @@
 						{
 							"filters": {
 								"all_of": [
-									{
-										"test": "is_family",
-										"subject": "other",
-										"value": "player"
-									},
+									{ "test": "is_family", "subject": "other", "value": "player" },
 									{
 										"none_of": [
-											{
-												"test": "has_equipment",
-												"subject": "other",
-												"domain": "head",
-												"value": "golden_helmet"
-											},
-											{
-												"test": "has_equipment",
-												"subject": "other",
-												"domain": "torso",
-												"value": "golden_chestplate"
-											},
-											{
-												"test": "has_equipment",
-												"subject": "other",
-												"domain": "leg",
-												"value": "golden_leggings"
-											},
-											{
-												"test": "has_equipment",
-												"subject": "other",
-												"domain": "feet",
-												"value": "golden_boots"
-											}
+											{ "test": "has_equipment", "subject": "other", "domain": "head", "value": "golden_helmet" },
+											{ "test": "has_equipment", "subject": "other", "domain": "torso", "value": "golden_chestplate" },
+											{ "test": "has_equipment", "subject": "other", "domain": "leg", "value": "golden_leggings" },
+											{ "test": "has_equipment", "subject": "other", "domain": "feet", "value": "golden_boots" }
 										]
 									}
 								]
@@ -244,17 +153,15 @@
 				"minecraft:tameable": {
 					"probability": 0.15,
 					"tame_items": [
-						"goblin:golden_dandelion"
+						"minecraft:golden_carrot",
+						"minecraft:golden_apple",
+						"minecraft:glistering_melon_slice"
 					],
-					"tame_event": {
-						"event": "goblin:on_tamed"
-					}
+					"tame_event": { "event": "goblin:on_tamed" }
 				}
 			},
 			"goblin:locked_state": {
-				"minecraft:movement": {
-					"value": 0
-				},
+				"minecraft:movement": { "value": 0.0 },
 				"minecraft:navigation.walk": {
 					"can_path_over_water": false,
 					"avoid_water": true,
@@ -267,44 +174,26 @@
 				}
 			},
 			"goblin:sitting_state": {
-				"minecraft:movement": {
-					"value": 0
-				},
-				"minecraft:behavior.stay": {
-					"priority": 0,
-					"speed_multiplier": 0
-				}
+				"minecraft:movement": { "value": 0.0 }
 			},
 			"goblin:crossbow_lock": {
-				"minecraft:movement": {
-					"value": 0
-				}
+				"minecraft:movement": { "value": 0.0 }
 			},
 			"goblin:healing_state": {
-				"minecraft:movement": {
-					"value": 0
-				}
+				"minecraft:movement": { "value": 0.0 }
 			},
 			"goblin:exploding": {
 				"minecraft:explode": {
-					"fuse_duration": 0,
 					"fuse_lit": true,
 					"power": 1.5,
 					"causes_fire": false,
-					"breaks_blocks": false,
-					"damage_sources": [
-						"entity_explosion"
-					]
+					"breaks_blocks": false
 				}
 			}
 		},
 		"components": {
 			"minecraft:type_family": {
-				"family": [
-					"goblin",
-					"mob",
-					"monster"
-				]
+				"family": [ "goblin", "mob", "monster" ]
 			},
 			"minecraft:collision_box": {
 				"width": 0.6,
@@ -320,13 +209,8 @@
 				"suffocate_time": 0
 			},
 			"minecraft:can_climb": {},
-			"minecraft:health": {
-				"value": 20,
-				"max": 20
-			},
-			"minecraft:movement": {
-				"value": 0.3
-			},
+			"minecraft:health": { "value": 20, "max": 20 },
+			"minecraft:movement": { "value": 0.3 },
 			"minecraft:movement.basic": {},
 			"minecraft:navigation.walk": {
 				"can_path_over_water": false,
@@ -336,9 +220,7 @@
 				"avoid_damage_blocks": true
 			},
 			"minecraft:jump.static": {},
-			"minecraft:attack": {
-				"damage": 3
-			},
+			"minecraft:attack": { "damage": 3 },
 			"minecraft:damage_sensor": {
 				"triggers": [
 					{
@@ -364,11 +246,10 @@
 				"attack_interval_min": 1,
 				"attack_interval_max": 3,
 				"attack_radius": 15,
-				"speed_multiplier": 0,
-				"on_attack": {
-					"event": "goblin:on_ranged_attack",
-					"target": "self"
-				}
+				"speed_multiplier": 0
+			},
+			"minecraft:shooter": {
+				"def": "minecraft:small_fireball"
 			},
 			"minecraft:behavior.look_at_target": {
 				"priority": 9,
@@ -410,67 +291,29 @@
 						"on_interact": {
 							"filters": {
 								"all_of": [
-									{
-										"test": "is_family",
-										"subject": "other",
-										"value": "player"
-									},
-									{
-										"test": "has_equipment",
-										"subject": "other",
-										"domain": "hand",
-										"value": "minecraft:honey_bottle"
-									},
-									{
-										"test": "has_property",
-										"domain": "goblin:locked",
-										"value": false
-									}
+									{ "test": "is_family", "subject": "other", "value": "player" },
+									{ "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:honey_bottle" },
+									{ "test": "is_property", "domain": "goblin:locked", "value": false }
 								]
 							},
 							"event": "goblin:on_fed_honey",
 							"target": "self"
 						},
-						"consume_item": true,
 						"use_item": true,
-						"hurt_item": 0,
-						"play_sounds": "item.honey_bottle.drink",
 						"interact_text": "action.interact.feed"
 					},
 					{
 						"on_interact": {
 							"filters": {
 								"all_of": [
-									{
-										"test": "is_family",
-										"subject": "other",
-										"value": "player"
-									},
-									{
-										"test": "has_property",
-										"domain": "goblin:locked",
-										"value": false
-									},
+									{ "test": "is_family", "subject": "other", "value": "player" },
+									{ "test": "has_component", "subject": "self", "value": "minecraft:is_tamed" },
+									{ "test": "is_property", "domain": "goblin:locked", "value": false },
 									{
 										"any_of": [
-											{
-												"test": "has_equipment",
-												"subject": "other",
-												"domain": "hand",
-												"value": "minecraft:golden_apple"
-											},
-											{
-												"test": "has_equipment",
-												"subject": "other",
-												"domain": "hand",
-												"value": "minecraft:golden_carrot"
-											},
-											{
-												"test": "has_equipment",
-												"subject": "other",
-												"domain": "hand",
-												"value": "minecraft:glistering_melon_slice"
-											}
+											{ "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:golden_apple" },
+											{ "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:golden_carrot" },
+											{ "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:glistering_melon_slice" }
 										]
 									}
 								]
@@ -478,7 +321,6 @@
 							"event": "goblin:on_fed_food",
 							"target": "self"
 						},
-						"consume_item": true,
 						"use_item": true,
 						"interact_text": "action.interact.feed"
 					},
@@ -486,26 +328,10 @@
 						"on_interact": {
 							"filters": {
 								"all_of": [
-									{
-										"test": "is_owner",
-										"subject": "other",
-										"value": true
-									},
-									{
-										"test": "is_sneaking",
-										"subject": "other",
-										"value": true
-									},
-									{
-										"test": "has_property",
-										"domain": "goblin:idle_pose",
-										"value": 1
-									},
-									{
-										"test": "has_property",
-										"domain": "goblin:locked",
-										"value": false
-									}
+									{ "test": "is_owner", "subject": "other", "value": true },
+									{ "test": "is_sneaking", "subject": "other", "value": true },
+									{ "test": "is_property", "domain": "goblin:idle_pose", "value": 1 },
+									{ "test": "is_property", "domain": "goblin:locked", "value": false }
 								]
 							},
 							"event": "goblin:on_belly_rub",
@@ -517,21 +343,9 @@
 						"on_interact": {
 							"filters": {
 								"all_of": [
-									{
-										"test": "is_owner",
-										"subject": "other",
-										"value": true
-									},
-									{
-										"test": "is_sneaking",
-										"subject": "other",
-										"value": false
-									},
-									{
-										"test": "has_property",
-										"domain": "goblin:locked",
-										"value": false
-									}
+									{ "test": "is_owner", "subject": "other", "value": true },
+									{ "test": "is_sneaking", "subject": "other", "value": false },
+									{ "test": "is_property", "domain": "goblin:locked", "value": false }
 								]
 							},
 							"event": "goblin:on_sit_toggle",
@@ -551,20 +365,17 @@
 				"look_distance": 6,
 				"probability": 0.02
 			},
-			"minecraft:behavior.random_look_around": {
-				"priority": 10
-			},
+			"minecraft:behavior.random_look_around": { "priority": 10 },
 			"minecraft:despawn": {
 				"filters": {
 					"none_of": [
-						{
-							"test": "has_component",
-							"value": "minecraft:is_tamed"
-						}
+						{ "test": "has_component", "value": "minecraft:is_tamed" }
 					]
 				},
-				"min_distance": 32,
-				"max_distance": 128
+				"despawn_from_distance": {
+					"min_distance": 32,
+					"max_distance": 128
+				}
 			},
 			"minecraft:loot": {
 				"table": "loot_tables/entities/goblin_girl.json"
@@ -573,46 +384,16 @@
 		},
 		"events": {
 			"minecraft:entity_spawned": {
-				"trigger": {
-					"event": "goblin:on_spawned"
-				}
+				"trigger": { "event": "goblin:on_spawned" }
 			},
 			"goblin:on_spawned": {
 				"sequence": [
-					{
-						"add": {
-							"component_groups": [
-								"goblin:stage_1",
-								"goblin:wild"
-							]
-						}
-					},
+					{ "add": { "component_groups": [ "goblin:stage_1", "goblin:wild" ] } },
 					{
 						"randomize": [
-							{
-								"weight": 65,
-								"add": {
-									"component_groups": [
-										"goblin:type_normal"
-									]
-								}
-							},
-							{
-								"weight": 25,
-								"add": {
-									"component_groups": [
-										"goblin:type_ranged"
-									]
-								}
-							},
-							{
-								"weight": 10,
-								"add": {
-									"component_groups": [
-										"goblin:type_mace"
-									]
-								}
-							}
+							{ "weight": 65, "add": { "component_groups": [ "goblin:type_normal" ] } },
+							{ "weight": 25, "add": { "component_groups": [ "goblin:type_ranged" ] } },
+							{ "weight": 10, "add": { "component_groups": [ "goblin:type_mace" ] } }
 						]
 					}
 				]
@@ -621,342 +402,112 @@
 			"goblin:set_weapon_sword": {},
 			"goblin:set_weapon_crossbow": {},
 			"goblin:set_weapon_mace": {},
-			"goblin:on_pickup_weapon": {
-				"trigger": {
-					"event": "goblin:set_weapon_sword"
-				}
-			},
-			"goblin:on_pickup_mace": {
-				"trigger": {
-					"event": "goblin:set_weapon_mace"
-				}
-			},
-			"goblin:on_pickup_honey": {
-				"trigger": {
-					"event": "goblin:on_fed_honey"
-				}
-			},
+			"goblin:on_pickup_weapon": { "trigger": { "event": "goblin:set_weapon_sword" } },
+			"goblin:on_pickup_mace": { "trigger": { "event": "goblin:set_weapon_mace" } },
+			"goblin:on_pickup_honey": { "trigger": { "event": "goblin:on_fed_honey" } },
 			"goblin:on_fed_honey": {
 				"sequence": [
-					{
-						"set_property": {
-							"goblin:lock_anim": 0,
-							"goblin:locked": true
-						}
-					},
-					{
-						"add": {
-							"component_groups": [
-								"goblin:locked_state"
-							]
-						}
-					}
+					{ "set_property": { "goblin:lock_anim": 0, "goblin:locked": true } },
+					{ "add": { "component_groups": [ "goblin:locked_state" ] } }
 				]
 			},
 			"goblin:on_fed_food": {
-				"sequence": [
-					{
-						"add": {
-							"component_groups": [
-								"goblin:locked_state",
-								"goblin:healing_state"
-							]
-						}
-					}
-				]
+				"add": { "component_groups": [ "goblin:locked_state", "goblin:healing_state" ] }
 			},
-			"goblin:lock_drink": {
-				"set_property": {
-					"goblin:lock_anim": 0
-				}
-			},
-			"goblin:lock_apple": {
-				"set_property": {
-					"goblin:lock_anim": 1
-				}
-			},
-			"goblin:lock_carrot": {
-				"set_property": {
-					"goblin:lock_anim": 2
-				}
-			},
-			"goblin:lock_melon": {
-				"set_property": {
-					"goblin:lock_anim": 3
-				}
-			},
-			"goblin:lock_pop_real": {
-				"set_property": {
-					"goblin:lock_anim": 4
-				}
-			},
-			"goblin:lock_pop_fake": {
-				"set_property": {
-					"goblin:lock_anim": 5
-				}
-			},
+			"goblin:lock_drink": { "set_property": { "goblin:lock_anim": 0 } },
+			"goblin:lock_apple": { "set_property": { "goblin:lock_anim": 1 } },
+			"goblin:lock_carrot": { "set_property": { "goblin:lock_anim": 2 } },
+			"goblin:lock_melon": { "set_property": { "goblin:lock_anim": 3 } },
+			"goblin:lock_pop_real": { "set_property": { "goblin:lock_anim": 4 } },
+			"goblin:lock_pop_fake": { "set_property": { "goblin:lock_anim": 5 } },
 			"goblin:apply_lock": {
-				"add": {
-					"component_groups": [
-						"goblin:locked_state"
-					]
-				}
+				"add": { "component_groups": [ "goblin:locked_state" ] }
 			},
 			"goblin:remove_lock": {
 				"sequence": [
-					{
-						"remove": {
-							"component_groups": [
-								"goblin:locked_state",
-								"goblin:healing_state"
-							]
-						}
-					},
-					{
-						"set_property": {
-							"goblin:locked": false
-						}
-					}
+					{ "remove": { "component_groups": [ "goblin:locked_state", "goblin:healing_state" ] } },
+					{ "set_property": { "goblin:locked": false } }
 				]
 			},
 			"goblin:apply_crossbow_lock": {
-				"add": {
-					"component_groups": [
-						"goblin:crossbow_lock"
-					]
-				}
+				"add": { "component_groups": [ "goblin:crossbow_lock" ] }
 			},
 			"goblin:remove_crossbow_lock": {
-				"remove": {
-					"component_groups": [
-						"goblin:crossbow_lock"
-					]
-				}
+				"remove": { "component_groups": [ "goblin:crossbow_lock" ] }
 			},
 			"goblin:set_stage_1": {
 				"sequence": [
-					{
-						"remove": {
-							"component_groups": [
-								"goblin:stage_1",
-								"goblin:stage_2",
-								"goblin:stage_3",
-								"goblin:stage_4"
-							]
-						}
-					},
-					{
-						"add": {
-							"component_groups": [
-								"goblin:stage_1"
-							]
-						}
-					},
-					{
-						"set_property": {
-							"goblin:stage": 1
-						}
-					}
+					{ "remove": { "component_groups": [ "goblin:stage_1", "goblin:stage_2", "goblin:stage_3", "goblin:stage_4" ] } },
+					{ "add": { "component_groups": [ "goblin:stage_1" ] } },
+					{ "set_property": { "goblin:stage": 1 } }
 				]
 			},
 			"goblin:set_stage_2": {
 				"sequence": [
-					{
-						"remove": {
-							"component_groups": [
-								"goblin:stage_1",
-								"goblin:stage_2",
-								"goblin:stage_3",
-								"goblin:stage_4"
-							]
-						}
-					},
-					{
-						"add": {
-							"component_groups": [
-								"goblin:stage_2"
-							]
-						}
-					},
-					{
-						"set_property": {
-							"goblin:stage": 2
-						}
-					}
+					{ "remove": { "component_groups": [ "goblin:stage_1", "goblin:stage_2", "goblin:stage_3", "goblin:stage_4" ] } },
+					{ "add": { "component_groups": [ "goblin:stage_2" ] } },
+					{ "set_property": { "goblin:stage": 2 } }
 				]
 			},
 			"goblin:set_stage_3": {
 				"sequence": [
-					{
-						"remove": {
-							"component_groups": [
-								"goblin:stage_1",
-								"goblin:stage_2",
-								"goblin:stage_3",
-								"goblin:stage_4"
-							]
-						}
-					},
-					{
-						"add": {
-							"component_groups": [
-								"goblin:stage_3"
-							]
-						}
-					},
-					{
-						"set_property": {
-							"goblin:stage": 3
-						}
-					}
+					{ "remove": { "component_groups": [ "goblin:stage_1", "goblin:stage_2", "goblin:stage_3", "goblin:stage_4" ] } },
+					{ "add": { "component_groups": [ "goblin:stage_3" ] } },
+					{ "set_property": { "goblin:stage": 3 } }
 				]
 			},
 			"goblin:set_stage_4": {
 				"sequence": [
-					{
-						"remove": {
-							"component_groups": [
-								"goblin:stage_1",
-								"goblin:stage_2",
-								"goblin:stage_3",
-								"goblin:stage_4"
-							]
-						}
-					},
-					{
-						"add": {
-							"component_groups": [
-								"goblin:stage_4"
-							]
-						}
-					},
-					{
-						"set_property": {
-							"goblin:stage": 4
-						}
-					}
+					{ "remove": { "component_groups": [ "goblin:stage_1", "goblin:stage_2", "goblin:stage_3", "goblin:stage_4" ] } },
+					{ "add": { "component_groups": [ "goblin:stage_4" ] } },
+					{ "set_property": { "goblin:stage": 4 } }
 				]
 			},
 			"goblin:pop_real": {
 				"sequence": [
-					{
-						"set_property": {
-							"goblin:locked": true,
-							"goblin:lock_anim": 4
-						}
-					},
-					{
-						"add": {
-							"component_groups": [
-								"goblin:locked_state"
-							]
-						}
-					}
+					{ "set_property": { "goblin:locked": true, "goblin:lock_anim": 4 } },
+					{ "add": { "component_groups": [ "goblin:locked_state" ] } }
 				]
 			},
 			"goblin:apply_explosion": {
-				"add": {
-					"component_groups": [
-						"goblin:exploding"
-					]
-				}
+				"add": { "component_groups": [ "goblin:exploding" ] }
 			},
 			"goblin:pop_fake": {
 				"sequence": [
-					{
-						"set_property": {
-							"goblin:locked": true,
-							"goblin:lock_anim": 5
-						}
-					},
-					{
-						"add": {
-							"component_groups": [
-								"goblin:locked_state"
-							]
-						}
-					}
+					{ "set_property": { "goblin:locked": true, "goblin:lock_anim": 5 } },
+					{ "add": { "component_groups": [ "goblin:locked_state" ] } }
 				]
 			},
 			"goblin:on_melee_attack": {
-				"set_property": {
-					"goblin:attacking": true
-				}
+				"set_property": { "goblin:attacking": true }
 			},
 			"goblin:on_ranged_attack": {
 				"sequence": [
-					{
-						"set_property": {
-							"goblin:attacking": true,
-							"goblin:crossbow_phase": 1
-						}
-					},
-					{
-						"trigger": {
-							"event": "goblin:apply_crossbow_lock"
-						}
-					}
+					{ "set_property": { "goblin:attacking": true, "goblin:crossbow_phase": 1 } },
+					{ "trigger": { "event": "goblin:apply_crossbow_lock" } }
 				]
 			},
 			"goblin:on_tame_attempt": {},
 			"goblin:on_tamed": {
 				"sequence": [
-					{
-						"remove": {
-							"component_groups": [
-								"goblin:wild"
-							]
-						}
-					},
-					{
-						"add": {
-							"component_groups": [
-								"goblin:tamed"
-							]
-						}
-					},
-					{
-						"set_property": {
-							"goblin:idle_pose": 0
-						}
-					}
+					{ "remove": { "component_groups": [ "goblin:wild" ] } },
+					{ "add": { "component_groups": [ "goblin:tamed" ] } },
+					{ "set_property": { "goblin:idle_pose": 0 } }
 				]
 			},
 			"goblin:on_sit_toggle": {
 				"sequence": [
 					{
-						"filters": {
-							"test": "has_property",
-							"domain": "goblin:idle_pose",
-							"value": 1
-						},
-						"remove": {
-							"component_groups": [
-								"goblin:sitting_state"
-							]
-						},
-						"set_property": {
-							"goblin:idle_pose": 0
-						}
+						"filters": { "test": "is_property", "domain": "goblin:idle_pose", "value": 1 },
+						"remove": { "component_groups": [ "goblin:sitting_state" ] },
+						"set_property": { "goblin:idle_pose": 0 }
 					},
 					{
 						"filters": {
-							"none_of": [
-								{
-									"test": "has_property",
-									"domain": "goblin:idle_pose",
-									"value": 1
-								}
-							]
+							"none_of": [ { "test": "is_property", "domain": "goblin:idle_pose", "value": 1 } ]
 						},
-						"add": {
-							"component_groups": [
-								"goblin:sitting_state"
-							]
-						},
-						"set_property": {
-							"goblin:idle_pose": 1
-						}
+						"add": { "component_groups": [ "goblin:sitting_state" ] },
+						"set_property": { "goblin:idle_pose": 1 }
 					}
 				]
 			},
@@ -964,48 +515,24 @@
 			"goblin:on_hurt": {
 				"sequence": [
 					{
-						"filters": {
-							"test": "has_property",
-							"domain": "goblin:idle_pose",
-							"value": 2
-						},
-						"set_property": {
-							"goblin:idle_pose": 0
-						}
+						"filters": { "test": "is_property", "domain": "goblin:idle_pose", "value": 2 },
+						"set_property": { "goblin:idle_pose": 0 }
 					}
 				]
 			},
 			"goblin:on_regress": {
 				"sequence": [
 					{
-						"filters": {
-							"test": "has_property",
-							"domain": "goblin:stage",
-							"value": 4
-						},
-						"trigger": {
-							"event": "goblin:set_stage_3"
-						}
+						"filters": { "test": "is_property", "domain": "goblin:stage", "value": 4 },
+						"trigger": { "event": "goblin:set_stage_3" }
 					},
 					{
-						"filters": {
-							"test": "has_property",
-							"domain": "goblin:stage",
-							"value": 3
-						},
-						"trigger": {
-							"event": "goblin:set_stage_2"
-						}
+						"filters": { "test": "is_property", "domain": "goblin:stage", "value": 3 },
+						"trigger": { "event": "goblin:set_stage_2" }
 					},
 					{
-						"filters": {
-							"test": "has_property",
-							"domain": "goblin:stage",
-							"value": 2
-						},
-						"trigger": {
-							"event": "goblin:set_stage_1"
-						}
+						"filters": { "test": "is_property", "domain": "goblin:stage", "value": 2 },
+						"trigger": { "event": "goblin:set_stage_1" }
 					}
 				]
 			},
