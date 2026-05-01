@@ -1,34 +1,10 @@
-[Localization][warning]-Line: 68 - Invalid lang file format. New line character was found while parsing key: '//items'.
-
-[Localization][warning]-Line: 73 - Invalid lang file format. New line character was found while parsing key: '//spawn eggs//'.
-
-[Localization][warning]-Line: 111 - Invalid lang file format. New line character was found while parsing key: '//entities//'.
-
-[Localization][warning]-Line: 149 - Invalid lang file format. New line character was found while parsing key: '//new furni//'.
-
-[Localization][warning]-Line: 187 - Invalid lang file format. New line character was found while parsing key: '///'.
-
-[Localization][warning]-Line: 231 - Invalid lang file format. New line character was found while parsing key: 'skin.camoflauge skinpack.ironoreiron ore'.
-
-[Log][warning]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity |  -> component_groups -> goblin:sitting_state -> minecraft:behavior.stay: this component was found in the input, but is not present in the Schema
-
-[Log][warning]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity |  -> component_groups -> goblin:tamed -> minecraft:behavior.stay: this component was found in the input, but is not present in the Schema
-
-[Log][warning]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity |  -> component_groups -> goblin:tamed -> minecraft:owner_identifier: this component was found in the input, but is not present in the Schema
-
 [Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | description | Error loading property 'goblin:digestion_timer': 'default' value does not match the specified type 'float'
 
 [Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | description | Error loading property goblin:digestion_timer
 
 [Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | description | Error loading Actor Properties
 
-[Json][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | components | minecraft:despawn | max_distance | child 'max_distance' not valid here.
-
-[Json][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | components | minecraft:despawn | min_distance | child 'min_distance' not valid here.
-
-[Json][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | components | minecraft:interact | interactions | consume_item | child 'consume_item' not valid here.
-
-[Json][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | components | minecraft:behavior.ranged_attack | on_attack | child 'on_attack' not valid here.
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | components | minecraft:interact | interactions | on_interact | all_of | Filter test not found -> is_property
 
 [Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_hurt | filters | filters | Filter test not found -> is_property
 
@@ -37,10 +13,6 @@
 [Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | none_of | Filter test not found -> is_property
 
 [Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_regress | filters | filters | Filter test not found -> is_property
-
-[Json][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | component_groups | goblin:exploding | minecraft:explode | damage_sources | child 'damage_sources' not valid here.
-
-[Json][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | component_groups | goblin:exploding | minecraft:explode | fuse_duration | child 'fuse_duration' not valid here.
 
 [Localization][warning]-Line: 68 - Invalid lang file format. New line character was found while parsing key: '//items'.
 
@@ -98,54 +70,42 @@
 
 [Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.states.json | animations | goblin.state.stuffed | child 'goblin.state.stuffed' not valid here.
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | attacking_melee | animations | punching | query.property('goblin:weapon_state')!=null&&(query.property('goblin:weapon_state')==0||query.property('goblin:weapon_state')==3) | Error: unknown token: null&&(query.property('goblin:weapon_state')==0||query.property('goblin:weapon_state')==3)
+[Molang][error]-entity/goblin_client.json | variable.full_skin = query.property('goblin:full_skin');variable.skin_index = query.variant;variable.clothes_index = query.skin_id;variable.hair_index = query.property('goblin:hair_index'); | Error: query.property called on an actor without a property component.
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | attacking_melee | animations | punching | query.property('goblin:weapon_state')!=null&&(query.property('goblin:weapon_state')==0||query.property('goblin:weapon_state')==3) | unrecognized token: null&&(query.property('goblin:weapon_state')==0||query.property('goblin:weapon_state')==3)
+[Animation][error]-Error: can't find animation bloated
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | attacking_melee | animations | swinging | query.property('goblin:weapon_state')!=null&&query.property('goblin:weapon_state')==1 | Error: unknown token: null&&query.property('goblin:weapon_state')==1
+[Animation][error]-Error: can't find animation packed
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | attacking_melee | animations | swinging | query.property('goblin:weapon_state')!=null&&query.property('goblin:weapon_state')==1 | unrecognized token: null&&query.property('goblin:weapon_state')==1
+[Animation][error]-Error: can't find animation relaxed
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | attacking_ranged | animations | loading | query.property('goblin:crossbow_phase')!=null&&query.property('goblin:crossbow_phase')==1 | Error: unknown token: null&&query.property('goblin:crossbow_phase')==1
+[Animation][error]-Error: can't find animation stuffed
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | attacking_ranged | animations | loading | query.property('goblin:crossbow_phase')!=null&&query.property('goblin:crossbow_phase')==1 | unrecognized token: null&&query.property('goblin:crossbow_phase')==1
+[Animation][error]-Error: can't find animation punching
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | attacking_ranged | animations | shooting | query.property('goblin:crossbow_phase')!=null&&query.property('goblin:crossbow_phase')==2 | Error: unknown token: null&&query.property('goblin:crossbow_phase')==2
+[Animation][error]-Error: can't find animation swinging
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | attacking_ranged | animations | shooting | query.property('goblin:crossbow_phase')!=null&&query.property('goblin:crossbow_phase')==2 | unrecognized token: null&&query.property('goblin:crossbow_phase')==2
+[Animation][error]-Error: can't find animation loading
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | locked | animations | drinking | query.property('goblin:lock_anim')!=null&&query.property('goblin:lock_anim')==0 | Error: unknown token: null&&query.property('goblin:lock_anim')==0
+[Animation][error]-Error: can't find animation shooting
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | locked | animations | drinking | query.property('goblin:lock_anim')!=null&&query.property('goblin:lock_anim')==0 | unrecognized token: null&&query.property('goblin:lock_anim')==0
+[Animation][error]-Error: can't find animation leaning
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | locked | animations | apple | query.property('goblin:lock_anim')!=null&&query.property('goblin:lock_anim')==1 | Error: unknown token: null&&query.property('goblin:lock_anim')==1
+[Animation][error]-Error: can't find animation drinking
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | locked | animations | apple | query.property('goblin:lock_anim')!=null&&query.property('goblin:lock_anim')==1 | unrecognized token: null&&query.property('goblin:lock_anim')==1
+[Animation][error]-Error: can't find animation apple
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | locked | animations | carrot | query.property('goblin:lock_anim')!=null&&query.property('goblin:lock_anim')==2 | Error: unknown token: null&&query.property('goblin:lock_anim')==2
+[Animation][error]-Error: can't find animation carrot
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | locked | animations | carrot | query.property('goblin:lock_anim')!=null&&query.property('goblin:lock_anim')==2 | unrecognized token: null&&query.property('goblin:lock_anim')==2
+[Animation][error]-Error: can't find animation melon
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | locked | animations | melon | query.property('goblin:lock_anim')!=null&&query.property('goblin:lock_anim')==3 | Error: unknown token: null&&query.property('goblin:lock_anim')==3
+[Animation][error]-Error: can't find animation pop_real
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | locked | animations | melon | query.property('goblin:lock_anim')!=null&&query.property('goblin:lock_anim')==3 | unrecognized token: null&&query.property('goblin:lock_anim')==3
+[Animation][error]-Error: can't find animation pop_fake
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | locked | animations | pop_real | query.property('goblin:lock_anim')!=null&&query.property('goblin:lock_anim')==4 | Error: unknown token: null&&query.property('goblin:lock_anim')==4
+[Animation][error]-Error: can't find animation resting
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | locked | animations | pop_real | query.property('goblin:lock_anim')!=null&&query.property('goblin:lock_anim')==4 | unrecognized token: null&&query.property('goblin:lock_anim')==4
+[Animation][error]-Error: can't find animation sitting
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | locked | animations | pop_fake | query.property('goblin:lock_anim')!=null&&query.property('goblin:lock_anim')==5 | Error: unknown token: null&&query.property('goblin:lock_anim')==5
+[Animation][error]-Error: can't find animation standing
 
-[Molang][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animation_controllers/goblin.animation_controllers.json | animation_controllers | controller.animation.goblin.motion | states | locked | animations | pop_fake | query.property('goblin:lock_anim')!=null&&query.property('goblin:lock_anim')==5 | unrecognized token: null&&query.property('goblin:lock_anim')==5
-
-[Rendering][error]-render_controllers/goblin_render_controller.json | render_controllers | controller.render.goblin | pre_animation | child 'pre_animation' not valid here.
-
-[Geometry][error]-bridge:goblin | bridge:goblin | Invalid render controller: controller.render.goblin
-
-[Animation][error]-Error: can't find animation ctrl_stage
-
-[Animation][error]-Error: can't find animation ctrl_motion
-
-[Animation][error]-Error: can't find animation ctrl_weapon
-
-[Actor][error]-Actor bridge:goblin does not have any properties
+[Animation][error]-Error: can't find animation walking
