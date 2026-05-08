@@ -4,15 +4,35 @@
 
 [Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | description | Error loading Actor Properties
 
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | components | minecraft:interact | interactions | on_interact | all_of | Filter test not found -> is_property
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | components | minecraft:interact | interactions | on_interact | all_of | Filter member of test must be a string
 
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_hurt | filters | filters | Filter test not found -> is_property
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | components | minecraft:interact | interactions | on_interact | all_of | Filter test failed to parse inputs -> has_property
 
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | Filter test not found -> is_property
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_hurt | filters | filters | Filter member of test must be a string
 
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | none_of | Filter test not found -> is_property
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_hurt | filters | filters | Filter test failed to parse inputs -> has_property
 
-[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_regress | filters | filters | Filter test not found -> is_property
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | Filter member of test must be a string
+
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | Filter test failed to parse inputs -> has_property
+
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | none_of | Filter member of test must be a string
+
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | none_of | Filter test failed to parse inputs -> has_property
+
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_regress | filters | filters | Filter member of test must be a string
+
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_regress | filters | filters | Filter test failed to parse inputs -> has_property
+
+[Localization][warning]-Line: 68 - Invalid lang file format. New line character was found while parsing key: '//items'.
+
+[Localization][warning]-Line: 73 - Invalid lang file format. New line character was found while parsing key: '//spawn eggs//'.
+
+[Localization][warning]-Line: 111 - Invalid lang file format. New line character was found while parsing key: '//entities//'.
+
+[Localization][warning]-Line: 149 - Invalid lang file format. New line character was found while parsing key: '//new furni//'.
+
+[Localization][warning]-Line: 187 - Invalid lang file format. New line character was found while parsing key: '///'.
 
 [Localization][warning]-Line: 231 - Invalid lang file format. New line character was found while parsing key: 'skin.camoflauge skinpack.ironoreiron ore'.
 
@@ -88,43 +108,7 @@
 
 [Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.states.json | animations | goblin.state.stuffed | child 'goblin.state.stuffed' not valid here.
 
-[Molang][error]-entity/goblin_client.json | variable.full_skin = query.property('goblin:name');variable.skin_index = query.variant;variable.clothes_index = query.skin_id;variable.hair_index = query.property('goblin:hair_index'); | Error: query.property called on an actor without a property component.
+[UI][error]-UI Control: screen_world_controls_and_settings | UI Control: variables_button_mappings_and_controls | UI Control: safezone_screen_matrix | UI Control: inner_matrix | UI Control: safezone_screen_panel | UI Control: root_screen_panel | UI Control: search_settings_content_factory | UI Control: search_settings_content | UI Control: content | UI Control: content_stacking | UI Control: settings_options_scrolling_panel | UI Control: scrolling_panel | UI Control: scroll_mouse | UI Control: scroll_view | UI Control: stack_panel | UI Control: background_and_viewport | UI Control: scrolling_view_port | UI Control: scrolling_content | UI Control: video_section | UI Control: option_toggle_improved_input_response | UI Control: option | UI Control Key: improved_input_response_option@general_section.improved_input_response_option | UI control reference not found: 'improved_input_response_option'
 
-[Animation][error]-Error: can't find animation bloated
-
-[Animation][error]-Error: can't find animation packed
-
-[Animation][error]-Error: can't find animation relaxed
-
-[Animation][error]-Error: can't find animation stuffed
-
-[Animation][error]-Error: can't find animation punching
-
-[Animation][error]-Error: can't find animation swinging
-
-[Animation][error]-Error: can't find animation loading
-
-[Animation][error]-Error: can't find animation shooting
-
-[Animation][error]-Error: can't find animation leaning
-
-[Animation][error]-Error: can't find animation drinking
-
-[Animation][error]-Error: can't find animation apple
-
-[Animation][error]-Error: can't find animation carrot
-
-[Animation][error]-Error: can't find animation melon
-
-[Animation][error]-Error: can't find animation pop_real
-
-[Animation][error]-Error: can't find animation pop_fake
-
-[Animation][error]-Error: can't find animation resting
-
-[Animation][error]-Error: can't find animation sitting
-
-[Animation][error]-Error: can't find animation standing
-
-[Animation][error]-Error: can't find animation walking
+[UI][error]-UI Control: screen_world_controls_and_settings | UI Control: variables_button_mappings_and_controls | UI Control: safezone_screen_matrix | UI Control: inner_matrix | UI Control: safezone_screen_panel | UI Control: root_screen_panel | UI Control: search_settings_content_factory | UI Control: search_settings_content | UI Control: content | UI Control: content_stacking | UI Control: settings_options_scrolling_panel | UI Control: scrolling_panel | UI Control: scroll_mouse | UI Control: scroll_view | UI Control: stack_panel | UI Control: background_and_viewport | UI Control: scrolling_view_port | UI Control: scrolling_content | UI Control: video_section | UI Control: option_toggle_improved_input_response | UI Control: option | On Control Path: /screen_world_controls_and_settings/variables_button_mappings_and_controls/safezone_screen_matrix/inner_matrix/safezone_screen_panel/root_screen_panel/search_settings_content_factory/search_settings_content/content/content_stacking/settings_options_scrolling_panel/scrolling_panel/scroll_mouse/scroll_view/stack_panel/background_and_viewport/scrolling_view_port/scrolling_content/video_section/option_toggle_improved_input_response/option/improved_input_response_option | Type not specified (or @-base not found) for control: improved_input_response_option
 
