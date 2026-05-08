@@ -1,0 +1,130 @@
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | description | Error loading property 'goblin:digestion_timer': 'default' value does not match the specified type 'float'
+
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | description | Error loading property goblin:digestion_timer
+
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | description | Error loading Actor Properties
+
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | components | minecraft:interact | interactions | on_interact | all_of | Filter test not found -> is_property
+
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_hurt | filters | filters | Filter test not found -> is_property
+
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | Filter test not found -> is_property
+
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | none_of | Filter test not found -> is_property
+
+[Actor][error]-goblin_test (2) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/Expandable | bridge:goblin | minecraft:entity | events | goblin:on_regress | filters | filters | Filter test not found -> is_property
+
+[Localization][warning]-Line: 231 - Invalid lang file format. New line character was found while parsing key: 'skin.camoflauge skinpack.ironoreiron ore'.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.apple | bones | big Liquid | child 'big Liquid' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.apple | bones | small Liquid | child 'small Liquid' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.carrot | bones | big Liquid | child 'big Liquid' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.carrot | bones | small Liquid | child 'small Liquid' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.drinking | bones | 4X - B | child '4X - B' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.drinking | bones | 4X - P | child '4X - P' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.drinking | bones | 4X - S | child '4X - S' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.drinking | bones | big Liquid | child 'big Liquid' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.drinking | bones | small Liquid | child 'small Liquid' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.melon | bones | big Liquid | child 'big Liquid' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.melon | bones | small Liquid | child 'small Liquid' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.pop_fake | bones | big Liquid | child 'big Liquid' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.pop_fake | bones | eyes all | child 'eyes all' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.pop_fake | bones | small Liquid | child 'small Liquid' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.pop_real | bones | big Liquid | child 'big Liquid' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.pop_real | bones | eyes all | child 'eyes all' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | animation.goblin.pop_real | bones | small Liquid | child 'small Liquid' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.apple | child 'goblin.animation.apple' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.carrot | child 'goblin.animation.carrot' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.drinking | child 'goblin.animation.drinking' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.leaning | child 'goblin.animation.leaning' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.loading | child 'goblin.animation.loading' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.melon | child 'goblin.animation.melon' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.pop_fake | child 'goblin.animation.pop_fake' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.pop_real | child 'goblin.animation.pop_real' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.punching | child 'goblin.animation.punching' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.resting | child 'goblin.animation.resting' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.shooting | child 'goblin.animation.shooting' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.sitting | child 'goblin.animation.sitting' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.standing | child 'goblin.animation.standing' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.swinging | child 'goblin.animation.swinging' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.animation.json | animations | goblin.animation.walking | child 'goblin.animation.walking' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.states.json | animations | goblin.state.bloated | child 'goblin.state.bloated' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.states.json | animations | goblin.state.packed | child 'goblin.state.packed' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.states.json | animations | goblin.state.relaxed | child 'goblin.state.relaxed' not valid here.
+
+[Animation][error]-C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/resource_packs/Expandable/animations/goblin.states.json | animations | goblin.state.stuffed | child 'goblin.state.stuffed' not valid here.
+
+[Molang][error]-entity/goblin_client.json | variable.full_skin = query.property('goblin:name');variable.skin_index = query.variant;variable.clothes_index = query.skin_id;variable.hair_index = query.property('goblin:hair_index'); | Error: query.property called on an actor without a property component.
+
+[Animation][error]-Error: can't find animation bloated
+
+[Animation][error]-Error: can't find animation packed
+
+[Animation][error]-Error: can't find animation relaxed
+
+[Animation][error]-Error: can't find animation stuffed
+
+[Animation][error]-Error: can't find animation punching
+
+[Animation][error]-Error: can't find animation swinging
+
+[Animation][error]-Error: can't find animation loading
+
+[Animation][error]-Error: can't find animation shooting
+
+[Animation][error]-Error: can't find animation leaning
+
+[Animation][error]-Error: can't find animation drinking
+
+[Animation][error]-Error: can't find animation apple
+
+[Animation][error]-Error: can't find animation carrot
+
+[Animation][error]-Error: can't find animation melon
+
+[Animation][error]-Error: can't find animation pop_real
+
+[Animation][error]-Error: can't find animation pop_fake
+
+[Animation][error]-Error: can't find animation resting
+
+[Animation][error]-Error: can't find animation sitting
+
+[Animation][error]-Error: can't find animation standing
+
+[Animation][error]-Error: can't find animation walking
+
