@@ -64,6 +64,12 @@
 					"range": [ 0.0, 25.0 ],
 					"default": 20.0,
 					"client_sync": false
+				},
+				"goblin:name": {
+					"type": "int",
+					"range": [ -1, 5 ],
+					"default": -1,
+					"client_sync": true
 				}
 			}
 		},
@@ -293,7 +299,7 @@
 								"all_of": [
 									{ "test": "is_family", "subject": "other", "value": "player" },
 									{ "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:honey_bottle" },
-									{ "test": "is_property", "domain": "goblin:locked", "value": false }
+									{ "test": "has_property", "domain": "goblin:locked", "value": false }
 								]
 							},
 							"event": "goblin:on_fed_honey",
@@ -308,7 +314,7 @@
 								"all_of": [
 									{ "test": "is_family", "subject": "other", "value": "player" },
 									{ "test": "has_component", "subject": "self", "value": "minecraft:is_tamed" },
-									{ "test": "is_property", "domain": "goblin:locked", "value": false },
+									{ "test": "has_property", "domain": "goblin:locked", "value": false },
 									{
 										"any_of": [
 											{ "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:golden_apple" },
@@ -330,8 +336,8 @@
 								"all_of": [
 									{ "test": "is_owner", "subject": "other", "value": true },
 									{ "test": "is_sneaking", "subject": "other", "value": true },
-									{ "test": "is_property", "domain": "goblin:idle_pose", "value": 1 },
-									{ "test": "is_property", "domain": "goblin:locked", "value": false }
+									{ "test": "has_property", "domain": "goblin:idle_pose", "value": 1 },
+									{ "test": "has_property", "domain": "goblin:locked", "value": false }
 								]
 							},
 							"event": "goblin:on_belly_rub",
@@ -345,13 +351,33 @@
 								"all_of": [
 									{ "test": "is_owner", "subject": "other", "value": true },
 									{ "test": "is_sneaking", "subject": "other", "value": false },
-									{ "test": "is_property", "domain": "goblin:locked", "value": false }
+									{ "test": "has_property", "domain": "goblin:locked", "value": false }
 								]
 							},
 							"event": "goblin:on_sit_toggle",
 							"target": "self"
 						},
 						"interact_text": "action.interact.sit_toggle"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{ "test": "is_family", "subject": "other", "value": "player" },
+									{ "test": "has_property", "domain": "goblin:locked", "value": false },
+									{
+										"any_of": [
+											{ "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:gold_ingot" },
+											{ "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:gold_nugget" }
+										]
+									}
+								]
+							},
+							"event": "goblin:on_barter",
+							"target": "self"
+						},
+						"use_item": true,
+						"interact_text": "action.interact.barter"
 					}
 				]
 			},
@@ -405,6 +431,7 @@
 			"goblin:on_pickup_weapon": { "trigger": { "event": "goblin:set_weapon_sword" } },
 			"goblin:on_pickup_mace": { "trigger": { "event": "goblin:set_weapon_mace" } },
 			"goblin:on_pickup_honey": { "trigger": { "event": "goblin:on_fed_honey" } },
+			"goblin:on_barter": {},
 			"goblin:on_fed_honey": {
 				"sequence": [
 					{ "set_property": { "goblin:lock_anim": 0, "goblin:locked": true } },
@@ -498,13 +525,13 @@
 			"goblin:on_sit_toggle": {
 				"sequence": [
 					{
-						"filters": { "test": "is_property", "domain": "goblin:idle_pose", "value": 1 },
+						"filters": { "test": "has_property", "domain": "goblin:idle_pose", "value": 1 },
 						"remove": { "component_groups": [ "goblin:sitting_state" ] },
 						"set_property": { "goblin:idle_pose": 0 }
 					},
 					{
 						"filters": {
-							"none_of": [ { "test": "is_property", "domain": "goblin:idle_pose", "value": 1 } ]
+							"none_of": [ { "test": "has_property", "domain": "goblin:idle_pose", "value": 1 } ]
 						},
 						"add": { "component_groups": [ "goblin:sitting_state" ] },
 						"set_property": { "goblin:idle_pose": 1 }
@@ -515,7 +542,7 @@
 			"goblin:on_hurt": {
 				"sequence": [
 					{
-						"filters": { "test": "is_property", "domain": "goblin:idle_pose", "value": 2 },
+						"filters": { "test": "has_property", "domain": "goblin:idle_pose", "value": 2 },
 						"set_property": { "goblin:idle_pose": 0 }
 					}
 				]
@@ -523,15 +550,15 @@
 			"goblin:on_regress": {
 				"sequence": [
 					{
-						"filters": { "test": "is_property", "domain": "goblin:stage", "value": 4 },
+						"filters": { "test": "has_property", "domain": "goblin:stage", "value": 4 },
 						"trigger": { "event": "goblin:set_stage_3" }
 					},
 					{
-						"filters": { "test": "is_property", "domain": "goblin:stage", "value": 3 },
+						"filters": { "test": "has_property", "domain": "goblin:stage", "value": 3 },
 						"trigger": { "event": "goblin:set_stage_2" }
 					},
 					{
-						"filters": { "test": "is_property", "domain": "goblin:stage", "value": 2 },
+						"filters": { "test": "has_property", "domain": "goblin:stage", "value": 2 },
 						"trigger": { "event": "goblin:set_stage_1" }
 					}
 				]
