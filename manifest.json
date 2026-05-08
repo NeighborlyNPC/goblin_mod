@@ -13,7 +13,7 @@
 			21,
 			120
 		],
-		"uuid": "89f30e86-3c93-4674-b71c-ecb3ff9e387c",
+		"uuid": "004b4603-429f-4dd6-bf50-aa63895f412b",
 		"version": [
 			1,
 			0,
@@ -22,8 +22,8 @@
 	},
 	"modules": [
 		{
-			"type": "data",
-			"uuid": "5682d852-7922-491f-9f7a-5da5b8169526",
+			"type": "resources",
+			"uuid": "1eaca818-75fc-426a-ad50-c9595255f149",
 			"version": [
 				1,
 				0,
@@ -33,7 +33,7 @@
 	],
 	"dependencies": [
 		{
-			"uuid": "004b4603-429f-4dd6-bf50-aa63895f412b",
+			"uuid": "89f30e86-3c93-4674-b71c-ecb3ff9e387c",
 			"version": [
 				1,
 				0,
