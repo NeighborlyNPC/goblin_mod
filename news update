@@ -1,0 +1,28 @@
+I restructured the staged goblin system to be more model-driven instead of relying heavily on animation scaling and hidden geometry tricks.
+
+Originally, the stages worked by using one large shared model with duplicate bones/cubes hidden and unhidden through animation groups. Some stages also changed proportions by scaling bones directly in animations. This worked, but it caused a lot of unnecessary geometry duplication and made the project harder to maintain/debug.
+
+The new setup uses separate stage model sections/groups controlled through identifiers/states instead. The stages still share most of the same animations and skeleton structure, but now the actual geometry differences are built directly into the models using Blockbench scaling and grouped geometry rather than runtime scaling tricks.
+
+The stage transition still happens through an animation trigger, but now:
+- the transition animation plays first
+- it holds near the final frame
+- the model/state identifier switches at the end
+- then the idle animation begins
+
+To make the transition seamless, I copied the opening idle keyframes and added them to the end of the transition animation so the pose naturally blends into idle without snapping.
+
+Most animations are still shared between stages. Only around 2 animations needed unique adjustments because of some geometry/bone differences. The rest reuse the same motion system with stage-specific geometry.
+
+I also simplified the rig by reducing unnecessary hidden geometry and duplicate cubes. Instead of relying on animation scale changes for stage appearance, the models themselves now contain the correct proportions.
+
+For variants (skin color, hair color, outfits), I’m still planning to use layered textures/render controller logic instead of making entirely separate full models for every variation.
+
+I also switched from bridge.v2 to Visual Studio Code because bridge started causing duplicate pack/cache issues and became unreliable for debugging. I’m now using:
+- Blockception’s Minecraft Bedrock Development extension pack
+- Error Lens
+-Prettier ~ code formatter
+
+This gives better JSON validation, schema support, inline error highlighting, Molang support, and overall cleaner debugging for Bedrock add-on development. 
+All when it comes to the identifiers it will just be 
+“goblin_zero” to three
