@@ -1,0 +1,5 @@
+(Stages) zero is default, but Tammy can happen at any stage because they drink on their own at low house. Also in the actual mod you can force them to drink until they explode because on that version they might always be hostile.  
+(Transformation)  I would rather use Minecraft:transformation because my randomly desponding will be distracting. 
+(Item entity) both of them are modern groups that layer the same way villager clothes do on action & stuff. For honey or food when picked up they should be displayed for five seconds until they put it away. They are also shown during their respective animation until completion. 
+(Animation) they all used the same animations besides two specific exceptions. Stage 0 and 1 use “sitting_0_1” and stage 2 and 3 use “sitting_2_3”. Also instead of drinking stage 3 used the two piping animations. 
+(Regression) yeah the system is still the same but aggression can transformer her back if that’s less complicated
