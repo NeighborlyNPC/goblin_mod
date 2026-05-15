@@ -1,30 +1,12 @@
-[Actor][error]-goblin_test (3) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/EXGoblinsB | bridge:goblin | minecraft:entity | description | Error loading property 'goblin:digestion_timer': 'default' value does not match the specified type 'float'
-
-[Actor][error]-goblin_test (3) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/EXGoblinsB | bridge:goblin | minecraft:entity | description | Error loading property goblin:digestion_timer
-
-[Actor][error]-goblin_test (3) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/EXGoblinsB | bridge:goblin | minecraft:entity | description | Error loading Actor Properties
-
-[Actor][error]-goblin_test (3) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/EXGoblinsB | bridge:goblin | minecraft:entity | components | minecraft:interact | interactions | on_interact | all_of | Filter member of test must be a string
-
-[Actor][error]-goblin_test (3) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/EXGoblinsB | bridge:goblin | minecraft:entity | components | minecraft:interact | interactions | on_interact | all_of | Filter test failed to parse inputs -> has_property
-
-[Actor][error]-goblin_test (3) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/EXGoblinsB | bridge:goblin | minecraft:entity | events | goblin:on_hurt | filters | filters | Filter member of test must be a string
-
-[Actor][error]-goblin_test (3) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/EXGoblinsB | bridge:goblin | minecraft:entity | events | goblin:on_hurt | filters | filters | Filter test failed to parse inputs -> has_property
-
-[Actor][error]-goblin_test (3) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/EXGoblinsB | bridge:goblin | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | Filter member of test must be a string
-
-[Actor][error]-goblin_test (3) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/EXGoblinsB | bridge:goblin | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | Filter test failed to parse inputs -> has_property
-
-[Actor][error]-goblin_test (3) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/EXGoblinsB | bridge:goblin | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | none_of | Filter member of test must be a string
-
-[Actor][error]-goblin_test (3) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/EXGoblinsB | bridge:goblin | minecraft:entity | events | goblin:on_sit_toggle | filters | filters | none_of | Filter test failed to parse inputs -> has_property
-
-[Actor][error]-goblin_test (3) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/EXGoblinsB | bridge:goblin | minecraft:entity | events | goblin:on_regress | filters | filters | Filter member of test must be a string
-
-[Actor][error]-goblin_test (3) | actor_definitions | C:/Users/Jaybomb64/AppData/Roaming/Minecraft Bedrock/Users/Shared/games/com.mojang/behavior_packs/EXGoblinsB | bridge:goblin | minecraft:entity | events | goblin:on_regress | filters | filters | Filter test failed to parse inputs -> has_property
+[Scripting][error]-Plugin [Inflatable Loot Goblin - 1.0.0] - does not contain main file [goblin_script.js].
 
 [Localization][warning]-Line: 231 - Invalid lang file format. New line character was found while parsing key: 'skin.camoflauge skinpack.ironoreiron ore'.
 
-[Molang][error]-entity/goblin_client.json | variable.full_skin = query.property('goblin:name');variable.skin_index = query.variant;variable.clothes_index = query.skin_id;variable.hair_index = query.property('goblin:hair_index'); | Error: query.property called on an actor without a property component.
+[Effects][error]-particles/burp_bubble.json | no valid version passed by the caller or found in the input
+
+[Effects][error]-particles/burp_bubble.json | Failed to load particle effect
+
+[Rendering][error]-render_controllers/goblin_render_controller.json | render_controllers | controller.render.goblin | pre_animation | child 'pre_animation' not valid here.
+
+[Geometry][error]-loot:goblin_zero | loot:goblin_zero | Invalid render controller: controller.render.goblin
 
